@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template: auto 1fr auto / auto 1fr auto;
     background-color: #F0F2EF;
-    color: #5C5346;
+    color: #341709;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -34,7 +34,7 @@ header,
 footer {
     align-items: center;
     background-color: #5C5346;
-    color: #F0F2EF;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -117,12 +117,12 @@ figcaption {
 
 #menu::before {
     content: "☰";
-    color: #F0F2EF;
+    color: #FFFFFF;
     font-size: 2em;
 }
 
 #menu.open::before {
     content: "✖";
-    color: #F0F2EF;
+    color: #FFFFFF;
     font-size: 2em;
 }
