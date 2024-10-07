@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Place of Interest</title>
+    <meta name="description" content="WDD 131 - Place of Interest. Explore Vietnam.">
+    <meta name="author" content="Men Do">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Vietnam</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/vietnam/vietnam-pagoda-on-lake-landscape-desktop.webp"
+                    media="(min-width: 1280px)">
+                <source srcset="images/vietnam/vietnam-pagoda-on-lake-portrait-tablet.webp" media="(min-width: 601px)">
+                <img src="images/vietnam/vietnam-pagoda-on-lake-portrait-mobile.webp"
+                    alt="An image of a pagoda on the surface of a lake in Vietnam." width="360" height="641">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>313429 sq km</dd>
+                <dt>Poulation:</dt>
+                <dd>98.19 million</dd>
+                <dt>Capital:</dt>
+                <dd>Hanoi</dd>
+                <dt>Languages:</dt>
+                <dd>Vietnamese</dd>
+                <dt>Currency:</dt>
+                <dd>Vietnamese Dong - VND</dd>
+                <dt>Time Zone:</dt>
+                <dd>Indochina Time - GMT+7</dd>
+            </dl>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <picture class="weather-icon">
+                <img src="images/weather-icons/weather-sun-sunny-icon-mobile.webp"
+                    alt="Icon image for the current weather." width="360" height="360">
+            </picture>
+            <dl></dl>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> Men Do Georgia, USA
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

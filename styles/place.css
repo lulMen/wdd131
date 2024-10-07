@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template: auto 1fr auto / 1fr auto 1fr;
+    background-color: #C8102E;
+    color: #000;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: #FFFFFF;
+    border-bottom: solid 2rem #FFCD00;
+}
+
+main {
+    grid-column: 1 / -1;
+    background-color: #FFFFFF;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    border: solid .1px #EEEEEE;
+}
+
+footer {
+    grid-column: 1 / -1;
+    padding: 1rem;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+footer p {
+    padding: .25rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+dl {
+    display: contents;
+}
+
+dt {
+    grid-column: 1;
+    display: inline;
+    font-weight: bold;
+    text-align: right;
+}
+
+dd::before {
+    grid-column: 2;
+    display: inline;
+}
+
+.hero {
+    background-color: #FFCD00;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.weather-icon {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
