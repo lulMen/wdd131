@@ -1,0 +1,33 @@
+@media (min-width: 720px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        font-size: 1.2em;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    h1 {
+        display: block;
+        margin: 0;
+        padding-left: 1em;
+        font-family: "Lora", Georgia, 'Times New Roman', serif;
+        font-size: 2em;
+    }
+
+    /* h2 {
+        font-size: 1.5em;
+    } */
+}
