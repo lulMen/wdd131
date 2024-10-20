@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description"
+        content="WDD 131 - Product Review Form. Let us know your opinion with our product review form.">
+    <meta name="author" content="Men Do">
+    <link rel="stylesheet" href="styles/form-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="GET" action="">
+            <fieldset>
+                <label for="product">Product Name</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                </select>
+            </fieldset>
+
+            <fieldset id="ratings">
+                <div class="form-header">Overall Rating</div>
+
+                <div class="rating-item">
+                    <label for="rating1">☆</label>
+                    <input type="radio" id="rating1" name="rating" value="oneStar" required>
+                </div>
+                <div class="rating-item">
+                    <label for="rating2">☆☆</label>
+                    <input type="radio" id="rating2" name="rating" value="twoStar" required>
+                </div>
+                <div class="rating-item">
+                    <label for="rating3">☆☆☆</label>
+                    <input type="radio" id="rating3" name="rating" value="threeStar" required>
+                </div>
+                <div class="rating-item">
+                    <label for="rating4">☆☆☆☆</label>
+                    <input type="radio" id="rating4" name="rating" value="fourStar" required>
+                </div>
+                <div class="rating-item">
+                    <label for="rating5">☆☆☆☆☆</label>
+                    <input type="radio" id="rating5" name="rating" value="fiveStar" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <p>Which features did you find useful in the product?</p>
+                    <p id="italic">(Check all that apply)</p>
+                </div>
+                <div class="feature-item">
+                    <input type="checkbox" id="feature1" name="durability" value="yes">
+                    <label for="feature1">Durability</label>
+                </div>
+                <div class="feature-item">
+                    <input type="checkbox" id="feature2" name="ease" value="yes">
+                    <label for="feature2">Ease of Use</label>
+                </div>
+                <div class="feature-item">
+                    <input type="checkbox" id="feature3" name="performance" value="yes">
+                    <label for="feature3">Performance</label>
+                </div>
+                <div class="feature-item">
+                    <input type="checkbox" id="feature4" name="design" value="yes">
+                    <label for="feature4">Design</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="writtenReview">Written Review</label>
+                <textarea id="writtenReview" name="writtenReview"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name">
+            </fieldset>
+
+            <input type="submit" value="Post My Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> Men Do Georgia, USA
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
