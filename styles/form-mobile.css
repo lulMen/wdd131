@@ -3,10 +3,11 @@
     --secondary-color: #AFD5AA;
     --primary-text-color: #341709;
     --secondary-text-color: #F0F2EF;
-    --accent-color-01: #E58F65;
-    --accent-color-02: #08A4BD;
+    --accent-color-01: #7A0000;
+    --accent-color-02: #013583;
     --header-font: "Lora", Georgia, 'Times New Roman', serif;
     --text-font: "Roboto", Arial, Helvetica, sans-serif;
+    --border: 1px solid rgb(229, 143, 101, 0.2);
 }
 
 * {
@@ -37,7 +38,7 @@ main {
     background-color: var(--secondary-text-color);
     color: var(--primary-text-color);
     margin: 1.5rem auto;
-    border: 1px solid rgb(229, 143, 101, 0.2);
+    border: var(--border);
 }
 
 main,
@@ -66,28 +67,80 @@ fieldset:not(:first-of-type) {
     padding-top: 1.5rem;
 }
 
+label {
+    margin-bottom: .25rem;
+}
+
 select,
 textarea,
 input[type="date"],
 input[type="text"],
 input[type="submit"] {
-    height: 44px;
-    padding-left: .5rem;
+    height: 45px;
+    padding: .25rem .5rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.25);
+}
+
+label[for="product"]::before {
+    content: "(* Indicates Required)";
+    display: block;
+    padding-bottom: .25rem;
+    color: var(--accent-color-02);
+    font-size: .9em;
+}
+
+label[for="writtenReview"]::after,
+label[for="name"]::after {
+    content: " (Optional)";
+    color: var(--accent-color-02);
+    font-size: .9em;
+}
+
+textarea {
+    height: 90px;
 }
 
 input[type="submit"] {
     width: 100%;
     margin-top: 3rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border: var(--border);
+    box-shadow: 1px 1px 1px #999;
+}
+
+select:required,
+input[type="date"]:required {
+    border-bottom: solid 4px var(--accent-color-01);
+}
+
+select:valid,
+input[type="date"]:valid {
+    border-bottom: solid 4px var(--secondary-color);
 }
 
 .form-header {
     grid-column: 1 / -1;
+    margin-bottom: .25rem;
 }
 
 .rating-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.feature-item:not(first-of-type) {
+    margin-top: .125rem;
+}
+
+.feature-item label {
+    margin-left: 3px;
 }
 
 #ratings {
