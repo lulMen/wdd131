@@ -1,5 +1,5 @@
 function addReviewProducts(productList) {
-    const productSelect = document.querySelector('#product-placeholder')
+    const productSelect = document.querySelector('#product')
 
     productList.forEach(product => {
         const option = document.createElement('option');
